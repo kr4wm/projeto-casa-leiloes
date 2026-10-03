@@ -1,3 +1,5 @@
+package dao;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,7 +17,7 @@ import javax.swing.JOptionPane;
  *
  * @author Adm
  */
-public class conectaDAO {
+public class ConectaDAO {
     
     public Connection connectDB(){
         Connection conn = null;
