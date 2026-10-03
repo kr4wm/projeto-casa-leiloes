@@ -21,6 +21,7 @@ public class CadastroVIEW extends javax.swing.JFrame {
      */
     public CadastroVIEW() {
         initComponents();
+        setVisible(true);
     }
 
     /**

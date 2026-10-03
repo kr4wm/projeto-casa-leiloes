@@ -23,11 +23,14 @@ public class ConectaDAO {
         Connection conn = null;
         
         try {
+            String url = "jdbc:mysql://localhost:3306/uc11_leiloes";
+            String user = "root";
+            String password = "Vinicius1@20"; 
         
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/uc11?user=root&password=");
-            
+            conn = DriverManager.getConnection(url, user, password);
+        
         } catch (SQLException erro){
-            JOptionPane.showMessageDialog(null, "Erro ConectaDAO" + erro.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ao conectar ao Banco de Dados" + erro.getMessage());
         }
         return conn;
     }
